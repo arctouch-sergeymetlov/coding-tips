@@ -11,9 +11,9 @@ public IEnumerable<T> GetItemsByIds(List<int> ids)
 }
 
 // The code above contains a nested loop iterating by two collections (_allItems x ids),
-// effectively makin the complexity of the algorythm as O(N*M) ~ O(N^2).
+// effectively making the complexity of the algorythm as O(N*M) ~ O(N^2).
 
-// You can simplyfy the complexity close to linear (almost equal to the single loop vs nested)
+// You can simplyfy the complexity close to linear (almost equal to the single loop run vs nested)
 // by using HashSet:
 
 public IEnumerable<T> GetItemsByIds(List<int> ids)
