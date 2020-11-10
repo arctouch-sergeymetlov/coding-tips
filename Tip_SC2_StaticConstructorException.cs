@@ -1,3 +1,6 @@
+// Tip CS2:
+// Avoid static constructors to throw exceptions.
+
 using System;
 
 public class Config
@@ -9,8 +12,6 @@ public class A
 {
     static A()
     {
-        // Tip CS2:
-        // Avoid static constructors to throw exceptions.
         if (Config.Throw)
             throw new InvalidOperationException();
     }
